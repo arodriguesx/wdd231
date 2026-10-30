@@ -1,0 +1,114 @@
+
+/*--------------------- SITE WIDE ----------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+-------------------- COLOR SCHEME --------------------
+#133B5C #69A1AC #D6B68A #F7F3EB #A38263
+*/
+
+/* -------------------- HEADER -------------------- */
+header {
+    border: #A38263 solid 1px;
+    display: grid;
+    grid-template-columns: 24px 1fr 44px;
+    padding: 5px 1px 5px 15px;
+    column-gap: 10px;
+    align-items: end;
+}
+
+header img {
+    padding: 5px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #133B5C;
+}
+
+/* ------------------- HAMBURGER ------------------- */
+.hamburger {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #133B5C;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 1rem
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/* ------------------- NAVIGATION ------------------- */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .5rem 15px;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: 1px solid #A38263;
+}
+
+.navigation li.curent {
+    background-color: #D6B68A;
+}
+
+.navigation a:hover {
+    background-color: #69A1AC;
+}
+
+/* ------------------- FOOTER ------------------- */
+footer {
+    background-color: #D6B68A;
+    padding: 1rem 15px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #F7F3EB solid 1px;
+    border-radius: 5px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+}
+
+.social a:hover {
+    background-color: #D6B68A;
+}
